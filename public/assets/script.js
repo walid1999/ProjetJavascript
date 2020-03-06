@@ -38,11 +38,13 @@ ajaxGet(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2304875
   const meteo = JSON.parse(reponse);
   // Récupération de certains résultats
   const temperature = meteo.main.temp;
+
+  temperatureR = Math.round(temperature);
   
 
   // Affichage des résultats
   const conditionsElt = document.createElement("div");
-  conditionsElt.textContent = `Il fait actuellement ` + (temperature-273)+`°C` ;
+  conditionsElt.textContent = `Il fait actuellement ` + (temperatureR-273)+` °C à ` + city ;
   
   const meteoElt = document.getElementById("meteo");
   meteoElt.appendChild(conditionsElt);

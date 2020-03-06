@@ -43,3 +43,14 @@ button:hover{
   background-color: #255442;
   color: white;
 }
+
+.input{
+  margin-top: 50px;
+}
+
+body{
+  background-image: url('img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
