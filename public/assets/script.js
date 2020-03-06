@@ -5,7 +5,7 @@
 
 
 function ajaxGet(url, callback) {
-  var req = new XMLHttpRequest();
+  const req = new XMLHttpRequest();
   req.open("GET", url);
   req.addEventListener("load", function () {
       if (req.status >= 200 && req.status < 400) {
@@ -41,10 +41,10 @@ ajaxGet(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2304875
   
 
   // Affichage des résultats
-  var conditionsElt = document.createElement("div");
-  conditionsElt.textContent = "Il fait actuellement " + temperature;
+  const conditionsElt = document.createElement("div");
+  conditionsElt.textContent = `Il fait actuellement ` + (temperature-273)+`°C` ;
   
-  var meteoElt = document.getElementById("meteo");
+  const meteoElt = document.getElementById("meteo");
   meteoElt.appendChild(conditionsElt);
   
 
