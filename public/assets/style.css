@@ -1,1 +1,35 @@
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
+.formulaire {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.entry-city{
+    font-size: 20px;
+}
+
+a.bouton {
+    padding: 8px 10px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #6495ED;
+    border: none;
+    box-shadow: 0 5px #999;
+  }
+
+  a.bouton:hover {
+    background-color: #6495ED;
+  }
+
+  a.bouton:active{
+    background-color: #6495ED;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
